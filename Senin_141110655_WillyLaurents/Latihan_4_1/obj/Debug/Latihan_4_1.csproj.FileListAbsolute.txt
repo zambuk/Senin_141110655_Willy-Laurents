@@ -1,0 +1,9 @@
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.exe.config
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.exe
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.pdb
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.csprojResolveAssemblyReference.cache
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.Form1.resources
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.Properties.Resources.resources
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.csproj.GenerateResource.Cache
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.exe
+E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.pdb
