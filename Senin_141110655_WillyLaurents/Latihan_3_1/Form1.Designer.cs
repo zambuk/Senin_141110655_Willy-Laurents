@@ -67,11 +67,15 @@
             // 
             this.color.Name = "color";
             this.color.Size = new System.Drawing.Size(121, 25);
+            this.color.Text = "Black";
+            this.color.SelectedIndexChanged += new System.EventHandler(this.color_SelectedIndexChanged);
             // 
             // style
             // 
             this.style.Name = "style";
             this.style.Size = new System.Drawing.Size(121, 25);
+            this.style.Text = "Arial";
+            this.style.SelectedIndexChanged += new System.EventHandler(this.style_SelectedIndexChanged);
             // 
             // toolStripSeparator1
             // 
@@ -127,6 +131,8 @@
             // 
             this.size.Name = "size";
             this.size.Size = new System.Drawing.Size(121, 25);
+            this.size.Text = "8 px";
+            this.size.SelectedIndexChanged += new System.EventHandler(this.size_SelectedIndexChanged);
             // 
             // textbox
             // 
@@ -135,6 +141,7 @@
             this.textbox.Size = new System.Drawing.Size(577, 221);
             this.textbox.TabIndex = 1;
             this.textbox.Text = "";
+            this.textbox.TextChanged += new System.EventHandler(this.textbox_TextChanged);
             // 
             // Form1
             // 

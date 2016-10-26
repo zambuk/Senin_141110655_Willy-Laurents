@@ -96,5 +96,10 @@ namespace Latihan_3_1
         {
             textbox.SelectionColor = Color.FromName(color.Text);
         }
+
+        private void textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
