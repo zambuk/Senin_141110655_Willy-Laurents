@@ -7,3 +7,12 @@ E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLauren
 E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.csproj.GenerateResource.Cache
 E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.exe
 E:\Kuliah\C# Lanjutan\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.pdb
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.exe.config
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.exe
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.pdb
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.exe
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\bin\Debug\Latihan_4_1.pdb
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.csprojResolveAssemblyReference.cache
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.Form1.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.Properties.Resources.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_4_1\obj\Debug\Latihan_4_1.csproj.GenerateResource.Cache
