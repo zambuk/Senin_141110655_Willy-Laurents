@@ -6,3 +6,5 @@ E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_14111065
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_5_1\obj\Debug\Latihan_5_1.csproj.GenerateResource.Cache
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_5_1\obj\Debug\Latihan_5_1.exe
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_5_1\obj\Debug\Latihan_5_1.pdb
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_5_1\obj\Debug\Latihan_5_1.csprojResolveAssemblyReference.cache
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_5_1\obj\Debug\Latihan_5_1.Form2.resources

@@ -20,6 +20,12 @@ namespace Latihan_5_1
             underline.Font = new Font(underline.Font, FontStyle.Underline);
         }
 
+        public Color formcolor
+        {
+            get { return this.textbox.BackColor; }
+            set { this.textbox.BackColor = value; }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //fontfamily
@@ -314,6 +320,13 @@ namespace Latihan_5_1
             {
                 Close();
             }
+        }
+
+        private void editorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(this);
+            form2.MdiParent = this.ParentForm;
+            form2.Show();
         }
     }
 }
