@@ -12,8 +12,6 @@ namespace volleyball_problem
 {
     public partial class Form1 : Form
     {
-
-
         static int Mod = 1000000007;
         public Form1()
         {
@@ -21,11 +19,22 @@ namespace volleyball_problem
         }
         static long Volleyball(int a, int b)
         {
-            if (a > b) return Volleyball(b, a);
-            if (b < 25) return 0;
-            if (b > 25 && b != a + 2) return 0;
-            if (b == 25 && b - a < 2) return 0;
-
+            if (a > b)
+            {
+                return Volleyball(b, a);
+            }
+            if (b < 25)
+            {
+                return 0;
+            }
+            if (b > 25 && b != a + 2)
+            {
+                return 0;
+            }
+            if (b == 25 && b - a < 2)
+            {
+                return 0;
+            }
             int max = 25;
             long[,] pascal = new long[max, max];
 
@@ -34,14 +43,20 @@ namespace volleyball_problem
                 for (int j = 0; j < max; j++)
                 {
                     if (i == 0 || j == 0)
+                    {
                         pascal[i, j] = 1;
+                    }
                     else
+                    {
                         pascal[i, j] = (pascal[i - 1, j] + pascal[i, j - 1]) % Mod;
+                    }
                 }
             }
 
             if (b == 25)
+            {
                 return pascal[24, a];
+            }
 
             return pascal[24, 24] % Mod * PowerMod(2, (a - 24), Mod) % Mod;
         }
@@ -53,8 +68,9 @@ namespace volleyball_problem
             while (power != 0)
             {
                 if ((power & 1) == 1)
+                {
                     mod = mod * a % n;
-
+                }
                 a = (a * a) % n;
                 power >>= 1;
             }
