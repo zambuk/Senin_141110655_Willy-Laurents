@@ -1,0 +1,8 @@
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\bin\Debug\volleyball_problem.exe.config
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\bin\Debug\volleyball_problem.exe
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\bin\Debug\volleyball_problem.pdb
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\obj\Debug\volleyball_problem.Form1.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\obj\Debug\volleyball_problem.Properties.Resources.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\obj\Debug\volleyball_problem.csproj.GenerateResource.Cache
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\obj\Debug\volleyball_problem.exe
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\volleyball_problem\obj\Debug\volleyball_problem.pdb
