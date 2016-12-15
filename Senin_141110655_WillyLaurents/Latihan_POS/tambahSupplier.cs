@@ -37,22 +37,46 @@ namespace Latihan_POS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            command = new MySqlCommand("Insert into pos.supplier(kode,nama,alamat,telepon) values(@kode,@nama,@alamat,@telepon);", conn);
-            command.Parameters.AddWithValue("@kode", txt_kode.Text.ToUpper());
-            command.Parameters.AddWithValue("@nama", txt_nama.Text);
-            command.Parameters.AddWithValue("@alamat", txt_alamat.Text);
-            command.Parameters.AddWithValue("@telepon", txt_telepon.Text);
-
-            try
+            if (txt_kode.Text.Length == 0)
             {
-                conn.Open();
-                command.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Supplier berhasil ditambahkan!");
+                MessageBox.Show("Kode Supplier belum diisi!");
+                return;
             }
-            catch (Exception popup)
+            if (txt_nama.Text.Length == 0)
             {
-                MessageBox.Show(popup.Message);
+                MessageBox.Show("Nama Supplier belum diisi!");
+                return;
+            }
+            if (txt_alamat.Text.Length == 0)
+            {
+                MessageBox.Show("Alamat Supplier belum diisi!");
+                return;
+            }
+            if (txt_telepon.Text.Length == 0)
+            {
+                MessageBox.Show("Telepon Supplier belum diisi!");
+                return;
+            }
+
+            if (txt_kode.Text.Length > 0 && txt_nama.Text.Length > 0 && txt_alamat.Text.Length > 0 && txt_telepon.Text.Length > 0)
+            {
+                command = new MySqlCommand("Insert into pos.supplier(kode,nama,alamat,telepon) values(@kode,@nama,@alamat,@telepon);", conn);
+                command.Parameters.AddWithValue("@kode", txt_kode.Text.ToUpper());
+                command.Parameters.AddWithValue("@nama", txt_nama.Text);
+                command.Parameters.AddWithValue("@alamat", txt_alamat.Text);
+                command.Parameters.AddWithValue("@telepon", txt_telepon.Text);
+
+                try
+                {
+                    conn.Open();
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("Supplier berhasil ditambahkan!");
+                }
+                catch (Exception popup)
+                {
+                    MessageBox.Show(popup.Message);
+                }
             }
         }
     }
