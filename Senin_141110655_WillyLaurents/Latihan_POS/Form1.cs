@@ -32,5 +32,17 @@ namespace Latihan_POS
         {
             Close();
         }
+
+        private void tambahCostumerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tambahCostumer formTambahCust = new tambahCostumer();
+            formTambahCust.Show();
+        }
+
+        private void tambahSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tambahSupplier formTambahSupp = new tambahSupplier();
+            formTambahSupp.Show();
+        }
     }
 }

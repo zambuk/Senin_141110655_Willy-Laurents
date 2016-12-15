@@ -61,6 +61,18 @@
     <Compile Include="tambahBarang.Designer.cs">
       <DependentUpon>tambahBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="tambahCostumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambahCostumer.Designer.cs">
+      <DependentUpon>tambahCostumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tambahSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tambahSupplier.Designer.cs">
+      <DependentUpon>tambahSupplier.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +87,12 @@
     </Compile>
     <EmbeddedResource Include="tambahBarang.resx">
       <DependentUpon>tambahBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahCostumer.resx">
+      <DependentUpon>tambahCostumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tambahSupplier.resx">
+      <DependentUpon>tambahSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
