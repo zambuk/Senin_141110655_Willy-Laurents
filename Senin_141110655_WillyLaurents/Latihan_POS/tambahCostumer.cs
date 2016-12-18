@@ -18,10 +18,6 @@ namespace Latihan_POS
             InitializeComponent();
         }
 
-        MySqlConnection conn = new MySqlConnection("server=127.0.0.1;database=pos;Uid=root;Pwd=''");
-
-        MySqlCommand command;
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -65,23 +61,8 @@ namespace Latihan_POS
 
             if (txt_kode.Text.Length > 0 && txt_nama.Text.Length > 0 && txt_alamat.Text.Length > 0 && txt_telepon.Text.Length > 0)
             {
-                command = new MySqlCommand("Insert into pos.costumer(kode,nama,alamat,telepon) values(@kode,@nama,@alamat,@telepon);", conn);
-                command.Parameters.AddWithValue("@kode", txt_kode.Text.ToUpper());
-                command.Parameters.AddWithValue("@nama", txt_nama.Text);
-                command.Parameters.AddWithValue("@alamat", txt_alamat.Text);
-                command.Parameters.AddWithValue("@telepon", txt_telepon.Text);
-
-                try
-                {
-                    conn.Open();
-                    command.ExecuteNonQuery();
-                    conn.Close();
-                    MessageBox.Show("Supplier berhasil ditambahkan!");
-                }
-                catch (Exception popup)
-                {
-                    MessageBox.Show(popup.Message);
-                }
+                DBController dbController = new DBController();
+                dbController.insertDataCostumer(txt_kode, txt_nama, txt_alamat, txt_telepon);
             }
         }
     }
