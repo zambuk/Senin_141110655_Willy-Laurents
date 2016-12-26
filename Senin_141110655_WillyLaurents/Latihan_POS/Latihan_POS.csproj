@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBController.cs" />
+    <Compile Include="editBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editBarang.Designer.cs">
+      <DependentUpon>editBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="tambahSupplier.Designer.cs">
       <DependentUpon>tambahSupplier.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="editBarang.resx">
+      <DependentUpon>editBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

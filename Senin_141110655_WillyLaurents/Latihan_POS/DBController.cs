@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Latihan_POS
 {
@@ -12,6 +13,8 @@ namespace Latihan_POS
     {
         MySqlCommand command;
         MySqlConnection conn;
+        DataTable dt;
+        MySqlDataAdapter da;
         public DBController()
         {
             connection();
@@ -89,6 +92,26 @@ namespace Latihan_POS
             {
                 MessageBox.Show(popup.Message);
             }
+        }
+
+        public void setDataGrid(String tableName, DataGridView dataGridView)
+        {
+            command = new MySqlCommand("select * from "+tableName, conn);
+            da = new MySqlDataAdapter(command);
+            dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView.DataSource = dt;
+        }
+
+        public void filterDataGrid(String tableName, DataGridView dataGridView, TextBox txt_nama)
+        {
+            command = new MySqlCommand("select * from " + tableName + " where nama like concat('%', @Nama '%')", conn);
+            command.Parameters.AddWithValue("@Nama", txt_nama.Text);
+            da = new MySqlDataAdapter(command);
+            dt = new DataTable();
+            da.Fill(dt);
+            dataGridView.DataSource = dt;
         }
     }
 }

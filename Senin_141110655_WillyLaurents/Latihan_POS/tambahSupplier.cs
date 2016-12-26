@@ -13,14 +13,13 @@ namespace Latihan_POS
 {
     public partial class tambahSupplier : Form
     {
+        DBController dbController;
         public tambahSupplier()
         {
+            dbController = new DBController();
             InitializeComponent();
+            dbController.setDataGrid("supplier",dataGridView1);
         }
-
-        MySqlConnection conn = new MySqlConnection("server=127.0.0.1;database=pos;Uid=root;Pwd=''");
-
-        MySqlCommand command;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -60,9 +59,13 @@ namespace Latihan_POS
 
             if (txt_kode.Text.Length > 0 && txt_nama.Text.Length > 0 && txt_alamat.Text.Length > 0 && txt_telepon.Text.Length > 0)
             {
-                DBController dbController = new DBController();
                 dbController.insertDataSupplier(txt_kode, txt_nama, txt_alamat, txt_telepon);
             }
+        }
+
+        private void txtKode_TextChanged_1(object sender, EventArgs e)
+        {
+            dbController.filterDataGrid("supplier", dataGridView1, txt_nama);
         }
     }
 }

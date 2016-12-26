@@ -13,9 +13,12 @@ namespace Latihan_POS
 {
     public partial class tambahCostumer : Form
     {
+        DBController dbController;
         public tambahCostumer()
         {
+            dbController = new DBController();
             InitializeComponent();
+            dbController.setDataGrid("costumer",dataGridView1);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -61,9 +64,13 @@ namespace Latihan_POS
 
             if (txt_kode.Text.Length > 0 && txt_nama.Text.Length > 0 && txt_alamat.Text.Length > 0 && txt_telepon.Text.Length > 0)
             {
-                DBController dbController = new DBController();
                 dbController.insertDataCostumer(txt_kode, txt_nama, txt_alamat, txt_telepon);
             }
+        }
+
+        private void txtKode_TextChanged_1(object sender, EventArgs e)
+        {
+            dbController.filterDataGrid("costumer", dataGridView1, txt_nama);
         }
     }
 }
