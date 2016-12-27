@@ -47,7 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cariCostumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariCostumer.Designer.cs">
+      <DependentUpon>cariCostumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cariSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariSupplier.Designer.cs">
+      <DependentUpon>cariSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBController.cs" />
+    <Compile Include="cariBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariBarang.Designer.cs">
+      <DependentUpon>cariBarang.cs</DependentUpon>
+    </Compile>
     <Compile Include="editBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,15 @@
     <Compile Include="tambahSupplier.Designer.cs">
       <DependentUpon>tambahSupplier.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cariBarang.resx">
+      <DependentUpon>cariBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariCostumer.resx">
+      <DependentUpon>cariCostumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariSupplier.resx">
+      <DependentUpon>cariSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editBarang.resx">
       <DependentUpon>editBarang.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,4 +11,7 @@ E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_14111065
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\bin\Debug\MySql.Data.dll
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.tambahCostumer.resources
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.tambahSupplier.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.cariBarang.resources
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.editBarang.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.cariSupplier.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.cariCostumer.resources

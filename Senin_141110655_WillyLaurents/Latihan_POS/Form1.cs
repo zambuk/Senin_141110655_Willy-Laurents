@@ -44,5 +44,23 @@ namespace Latihan_POS
             tambahSupplier formTambahSupp = new tambahSupplier();
             formTambahSupp.Show();
         }
+
+        private void editBarangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cariBarang cariBarang = new cariBarang();
+            cariBarang.Show();
+        }
+
+        private void editCostumerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cariCostumer cariCostumer = new cariCostumer();
+            cariCostumer.Show();
+        }
+
+        private void editSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cariSupplier cariSupplier = new cariSupplier();
+            cariSupplier.Show();
+        }
     }
 }

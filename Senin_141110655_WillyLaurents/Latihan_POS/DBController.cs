@@ -94,6 +94,29 @@ namespace Latihan_POS
             }
         }
 
+        public void updateDateBarang(String id, TextBox txtKode, TextBox txtBarang, TextBox txtJumlahAwal, TextBox txtHPP, TextBox txtJual)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("update barang set Kode = @kode, Nama = @nama, JumlahAwal = @jumlahawal, HargaHPP = @hargahpp, HargaJual = @hargajual, Updated_at = @updated_at where id = "+id, conn);
+            command.Parameters.AddWithValue("@kode", txtKode.Text.ToUpper());
+            command.Parameters.AddWithValue("@nama", txtBarang.Text);
+            command.Parameters.AddWithValue("@jumlahawal", txtJumlahAwal.Text);
+            command.Parameters.AddWithValue("@hargahpp", txtHPP.Text);
+            command.Parameters.AddWithValue("@hargajual", txtJual.Text);
+            command.Parameters.AddWithValue("@updated_at", time);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Barang berhasil diedit!");
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
+        
         public void setDataGrid(String tableName, DataGridView dataGridView)
         {
             command = new MySqlCommand("select * from "+tableName, conn);

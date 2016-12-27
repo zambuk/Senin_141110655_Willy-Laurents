@@ -31,10 +31,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahCostumerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tambahSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editCostumerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,18 +72,6 @@
             this.tambahBarangToolStripMenuItem.Text = "Tambah Barang";
             this.tambahBarangToolStripMenuItem.Click += new System.EventHandler(this.tambahBarangToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // tambahCostumerToolStripMenuItem
             // 
             this.tambahCostumerToolStripMenuItem.Name = "tambahCostumerToolStripMenuItem";
@@ -97,6 +85,18 @@
             this.tambahSupplierToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.tambahSupplierToolStripMenuItem.Text = "Tambah Supplier";
             this.tambahSupplierToolStripMenuItem.Click += new System.EventHandler(this.tambahSupplierToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -113,18 +113,21 @@
             this.editBarangToolStripMenuItem.Name = "editBarangToolStripMenuItem";
             this.editBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editBarangToolStripMenuItem.Text = "Edit Barang";
+            this.editBarangToolStripMenuItem.Click += new System.EventHandler(this.editBarangToolStripMenuItem_Click);
             // 
             // editCostumerToolStripMenuItem
             // 
             this.editCostumerToolStripMenuItem.Name = "editCostumerToolStripMenuItem";
             this.editCostumerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editCostumerToolStripMenuItem.Text = "Edit Costumer";
+            this.editCostumerToolStripMenuItem.Click += new System.EventHandler(this.editCostumerToolStripMenuItem_Click);
             // 
             // editSupplierToolStripMenuItem
             // 
             this.editSupplierToolStripMenuItem.Name = "editSupplierToolStripMenuItem";
             this.editSupplierToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editSupplierToolStripMenuItem.Text = "Edit Supplier";
+            this.editSupplierToolStripMenuItem.Click += new System.EventHandler(this.editSupplierToolStripMenuItem_Click);
             // 
             // Form1
             // 
