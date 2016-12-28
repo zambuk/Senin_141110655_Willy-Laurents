@@ -116,6 +116,66 @@ namespace Latihan_POS
                 MessageBox.Show(popup.Message);
             }
         }
+
+        public void updateDataCostumer(String id, TextBox txtKode, TextBox txtNama, TextBox txtAlamat, TextBox txtTelepon)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("update costumer set kode = @kode, nama = @nama, alamat = @alamat, telepon = @telepon where id = " + id, conn);
+            command.Parameters.AddWithValue("@kode", txtKode.Text.ToUpper());
+            command.Parameters.AddWithValue("@nama", txtNama.Text);
+            command.Parameters.AddWithValue("@alamat", txtAlamat.Text);
+            command.Parameters.AddWithValue("@telepon", txtTelepon.Text);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Costumer berhasil diedit!");
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
+
+        public void updateDataSupplier(String id, TextBox txtKode, TextBox txtNama, TextBox txtAlamat, TextBox txtTelepon)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("update supplier set kode = @kode, nama = @nama, alamat = @alamat, telepon = @telepon where id = " + id, conn);
+            command.Parameters.AddWithValue("@kode", txtKode.Text.ToUpper());
+            command.Parameters.AddWithValue("@nama", txtNama.Text);
+            command.Parameters.AddWithValue("@alamat", txtAlamat.Text);
+            command.Parameters.AddWithValue("@telepon", txtTelepon.Text);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Costumer berhasil diedit!");
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
+
+        public void delete(String id, String table)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("delete from "+table+" where id = " + id, conn);
+          
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show(table+" berhasil dihapus!");
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
         
         public void setDataGrid(String tableName, DataGridView dataGridView)
         {

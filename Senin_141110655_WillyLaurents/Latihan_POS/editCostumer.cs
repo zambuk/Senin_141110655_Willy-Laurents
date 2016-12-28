@@ -10,30 +10,28 @@ using System.Windows.Forms;
 
 namespace Latihan_POS
 {
-    public partial class editBarang : Form
+    public partial class editCostumer : Form
     {
         private String id;
         private String kode;
-        private String nama_barang;
-        private String jumlah_awal;
-        private String hargaHPP;
-        private String hargaJual;
+        private String nama;
+        private String alamat;
+        private String telepon;
         private DBController dbController;
-        public editBarang(String id,String kode,String nama_barang,String jumlah_awal,String hargaHPP,String hargaJual)
+        public editCostumer(String id, String kode, String nama,String alamat, String telepon)
         {
             dbController = new DBController();
             InitializeComponent();
             this.id = id;
             txtKode.Text = kode;
-            txtBarang.Text = nama_barang;
-            txtJumlahAwal.Text = jumlah_awal;
-            txtHPP.Text = hargaHPP;
-            txtJual.Text = hargaJual;
+            txtNama.Text = nama;
+            txtAlamat.Text = alamat;
+            txtTelepon.Text = telepon; 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dbController.updateDateBarang(id, txtKode, txtBarang, txtJumlahAwal, txtHPP, txtJual);
+            dbController.updateDataCostumer(id, txtKode, txtNama, txtAlamat, txtTelepon);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,7 +41,7 @@ namespace Latihan_POS
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            dbController.delete(id,"barang");
+            dbController.delete(id, "costumer");
         }
     }
 }

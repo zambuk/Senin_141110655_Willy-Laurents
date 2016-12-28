@@ -15,3 +15,5 @@ E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_14111065
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.editBarang.resources
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.cariSupplier.resources
 E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.cariCostumer.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.editCostumer.resources
+E:\Data\Kuliah\C# Lanjutan 2\clone\Senin_141110655_Willy-Laurents\Senin_141110655_WillyLaurents\Latihan_POS\obj\Debug\Latihan_POS.editSupplier.resources

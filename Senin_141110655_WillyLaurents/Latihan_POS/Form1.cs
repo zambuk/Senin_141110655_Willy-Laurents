@@ -62,5 +62,10 @@ namespace Latihan_POS
             cariSupplier cariSupplier = new cariSupplier();
             cariSupplier.Show();
         }
+
+        private void jualKeCosumerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,6 +39,9 @@
             this.editBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editCostumerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beliDariSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jualKeCosumerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +49,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrasiToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.transaksiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(619, 24);
@@ -111,23 +115,45 @@
             // editBarangToolStripMenuItem
             // 
             this.editBarangToolStripMenuItem.Name = "editBarangToolStripMenuItem";
-            this.editBarangToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editBarangToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.editBarangToolStripMenuItem.Text = "Edit Barang";
             this.editBarangToolStripMenuItem.Click += new System.EventHandler(this.editBarangToolStripMenuItem_Click);
             // 
             // editCostumerToolStripMenuItem
             // 
             this.editCostumerToolStripMenuItem.Name = "editCostumerToolStripMenuItem";
-            this.editCostumerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editCostumerToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.editCostumerToolStripMenuItem.Text = "Edit Costumer";
             this.editCostumerToolStripMenuItem.Click += new System.EventHandler(this.editCostumerToolStripMenuItem_Click);
             // 
             // editSupplierToolStripMenuItem
             // 
             this.editSupplierToolStripMenuItem.Name = "editSupplierToolStripMenuItem";
-            this.editSupplierToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editSupplierToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.editSupplierToolStripMenuItem.Text = "Edit Supplier";
             this.editSupplierToolStripMenuItem.Click += new System.EventHandler(this.editSupplierToolStripMenuItem_Click);
+            // 
+            // transaksiToolStripMenuItem
+            // 
+            this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.beliDariSupplierToolStripMenuItem,
+            this.jualKeCosumerToolStripMenuItem});
+            this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
+            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.transaksiToolStripMenuItem.Text = "Transaksi";
+            // 
+            // beliDariSupplierToolStripMenuItem
+            // 
+            this.beliDariSupplierToolStripMenuItem.Name = "beliDariSupplierToolStripMenuItem";
+            this.beliDariSupplierToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.beliDariSupplierToolStripMenuItem.Text = "Beli dari supplier";
+            // 
+            // jualKeCosumerToolStripMenuItem
+            // 
+            this.jualKeCosumerToolStripMenuItem.Name = "jualKeCosumerToolStripMenuItem";
+            this.jualKeCosumerToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.jualKeCosumerToolStripMenuItem.Text = "Jual ke costumer";
+            this.jualKeCosumerToolStripMenuItem.Click += new System.EventHandler(this.jualKeCosumerToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -159,6 +185,9 @@
         private System.Windows.Forms.ToolStripMenuItem editBarangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editCostumerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editSupplierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transaksiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem beliDariSupplierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jualKeCosumerToolStripMenuItem;
     }
 }
 

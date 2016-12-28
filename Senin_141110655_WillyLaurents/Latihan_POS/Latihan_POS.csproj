@@ -72,6 +72,18 @@
     <Compile Include="editBarang.Designer.cs">
       <DependentUpon>editBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="editCostumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCostumer.Designer.cs">
+      <DependentUpon>editCostumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editSupplier.Designer.cs">
+      <DependentUpon>editSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editBarang.resx">
       <DependentUpon>editBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCostumer.resx">
+      <DependentUpon>editCostumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editSupplier.resx">
+      <DependentUpon>editSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

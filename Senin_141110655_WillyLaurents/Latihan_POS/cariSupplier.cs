@@ -29,15 +29,13 @@ namespace Latihan_POS
         {
             if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
-                //String id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                //String kode = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                //String nama_barang = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                //String jumlah_awal = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                //String hargaHPP = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                //String hargaJual = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-
-                //editBarang editBarang = new editBarang(id, kode, nama_barang, jumlah_awal, hargaHPP, hargaJual);
-                //editBarang.Show();
+                String id = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                String kode = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                String nama = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                String alamat = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                String telepon = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                editSupplier editSupplier = new editSupplier(id, kode, nama, alamat, telepon);
+                editSupplier.Show();
             }
         }
     }
