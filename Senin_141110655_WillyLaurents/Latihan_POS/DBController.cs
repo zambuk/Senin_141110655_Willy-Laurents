@@ -237,6 +237,26 @@ namespace Latihan_POS
             }
         }
 
+        public void insertPenjualan(String id_barang, String id_kostumer, String banyak_barang)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("Insert into pos.penjualan(id_barang,id_costumer,banyak_barang,tanggal_jual) values(@id_barang,@id_kostumer,@banyak_barang,@time);", conn);
+            command.Parameters.AddWithValue("@id_barang", id_barang);
+            command.Parameters.AddWithValue("@id_kostumer", id_kostumer);
+            command.Parameters.AddWithValue("@banyak_barang", banyak_barang);
+            command.Parameters.AddWithValue("@time", time);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
+
         public void updateStock(String table,String id_barang, int stock)
         {
             DateTime time = DateTime.Now;

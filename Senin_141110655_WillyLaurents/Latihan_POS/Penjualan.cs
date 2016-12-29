@@ -10,31 +10,26 @@ using System.Windows.Forms;
 
 namespace Latihan_POS
 {
-    public partial class Pembelian : Form
+    public partial class Penjualan : Form
     {
         private DBController dbController;
         private String id_barang;
-        private String id_supplier;
+        private String id_costumer;
         private String stockBarang;
-        public Pembelian()
+        public Penjualan()
         {
             dbController = new DBController();
             InitializeComponent();
         }
 
-        private void Pembelian_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            dbController.searchBarangPembelian("barang",dataGridView1,txt_namaBarang);
+            dbController.searchBarangPembelian("barang", dataGridView1, txt_namaBarang);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dbController.searchSupplier("supplier", dataGridView2, txt_supplier);
+            dbController.searchSupplier("costumer", dataGridView2, txt_costumer);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -58,13 +53,18 @@ namespace Latihan_POS
             if (dataGridView2.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 String id = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
-                String namaSupplier = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+                String namaCostumer = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
                 String telepon = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
 
-                id_supplier = id;
-                txt_supplier.Text = namaSupplier;
+                id_costumer = id;
+                txt_costumer.Text = namaCostumer;
                 txt_telepon.Text = telepon;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Latihan_POS
                 MessageBox.Show("Nama Barang belum diisi!");
                 return;
             }
-            if (txt_supplier.Text.Length == 0)
+            if (txt_costumer.Text.Length == 0)
             {
                 MessageBox.Show("Nama Supplier belum diisi!");
                 return;
@@ -95,23 +95,21 @@ namespace Latihan_POS
                 return;
             }
 
-            if (txt_namaBarang.Text.Length != 0 && txt_supplier.Text.Length != 0 && txt_telepon.Text.Length != 0 && txt_jumlahBarang.Text.Length != 0 && txt_hargaJual.Text.Length != 0)
+            if (txt_namaBarang.Text.Length != 0 && txt_costumer.Text.Length != 0 && txt_telepon.Text.Length != 0 && txt_jumlahBarang.Text.Length != 0 && txt_hargaJual.Text.Length != 0)
             {
-                dbController.insertPembelian(id_barang, id_supplier, txt_jumlahBarang.Text);
-                dbController.updateStock("barang", id_barang, Int32.Parse(stockBarang) + Int32.Parse(txt_jumlahBarang.Text));
-                dbController.setDataGrid("barang", dataGridView1);
-                dbController.setDataGrid("supplier", dataGridView2);
+                if (Int32.Parse(stockBarang) >= Int32.Parse(txt_jumlahBarang.Text))
+                {
+                    dbController.insertPenjualan(id_barang, id_costumer, txt_jumlahBarang.Text);
+                    dbController.updateStock("barang", id_barang, Int32.Parse(stockBarang) - Int32.Parse(txt_jumlahBarang.Text));
+                    dbController.setDataGrid("barang", dataGridView1);
+                    dbController.setDataGrid("costumer", dataGridView2);
+                }
+                else
+                {
+                    MessageBox.Show("Stock tidak cukup");
+                    return;
+                }
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void refresh()
-        {
-
         }
     }
 }

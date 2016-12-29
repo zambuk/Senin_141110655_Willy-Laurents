@@ -65,7 +65,8 @@ namespace Latihan_POS
 
         private void jualKeCosumerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Penjualan penjualan = new Penjualan();
+            penjualan.Show();
         }
 
         private void beliDariSupplierToolStripMenuItem_Click(object sender, EventArgs e)
