@@ -65,6 +65,7 @@ namespace Latihan_POS
             if (txt_kode.Text.Length > 0 && txt_nama.Text.Length > 0 && txt_alamat.Text.Length > 0 && txt_telepon.Text.Length > 0)
             {
                 dbController.insertDataCostumer(txt_kode, txt_nama, txt_alamat, txt_telepon);
+                dbController.setDataGrid("costumer", dataGridView1);
             }
         }
 

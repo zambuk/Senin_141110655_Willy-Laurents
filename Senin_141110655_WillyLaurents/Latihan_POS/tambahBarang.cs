@@ -67,6 +67,7 @@ namespace Latihan_POS
             if (txtKode.Text.Length != 0 && txtNama.Text.Length != 0 && txtJumlah.Text.Length != 0 && txtHpp.Text.Length != 0 && txtJual.Text.Length != 0)
             {
                 dbController.insertDataBarang(txtKode, txtNama, txtJumlah, txtHpp, txtJual);
+                dbController.setDataGrid("barang", dataGridView1);
             }
         }
 
