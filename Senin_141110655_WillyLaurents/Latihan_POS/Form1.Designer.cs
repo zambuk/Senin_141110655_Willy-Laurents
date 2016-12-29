@@ -139,14 +139,16 @@
             this.beliDariSupplierToolStripMenuItem,
             this.jualKeCosumerToolStripMenuItem});
             this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
+            this.transaksiToolStripMenuItem.ShowShortcutKeys = false;
             this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.transaksiToolStripMenuItem.Text = "Transaksi";
             // 
             // beliDariSupplierToolStripMenuItem
             // 
             this.beliDariSupplierToolStripMenuItem.Name = "beliDariSupplierToolStripMenuItem";
-            this.beliDariSupplierToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.beliDariSupplierToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.beliDariSupplierToolStripMenuItem.Text = "Beli dari supplier";
+            this.beliDariSupplierToolStripMenuItem.Click += new System.EventHandler(this.beliDariSupplierToolStripMenuItem_Click);
             // 
             // jualKeCosumerToolStripMenuItem
             // 

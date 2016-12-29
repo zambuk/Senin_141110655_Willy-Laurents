@@ -67,5 +67,11 @@ namespace Latihan_POS
         {
 
         }
+
+        private void beliDariSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pembelian pembelian = new Pembelian();
+            pembelian.Show();
+        }
     }
 }

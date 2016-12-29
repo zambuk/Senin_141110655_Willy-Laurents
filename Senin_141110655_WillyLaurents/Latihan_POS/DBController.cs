@@ -196,5 +196,63 @@ namespace Latihan_POS
             da.Fill(dt);
             dataGridView.DataSource = dt;
         }
+
+        public void searchBarangPembelian(String tableName, DataGridView dataGridView, TextBox txt_nama)
+        {
+            command = new MySqlCommand("select * from " + tableName + " where Nama like concat('%', @Nama '%')", conn);
+            command.Parameters.AddWithValue("@Nama", txt_nama.Text);
+            da = new MySqlDataAdapter(command);
+            dt = new DataTable();
+            da.Fill(dt);
+            dataGridView.DataSource = dt;
+        }
+
+        public void searchSupplier(String tableName, DataGridView dataGridView, TextBox txt_nama)
+        {
+            command = new MySqlCommand("select * from " + tableName + " where nama like concat('%', @Nama '%')", conn);
+            command.Parameters.AddWithValue("@Nama", txt_nama.Text);
+            da = new MySqlDataAdapter(command);
+            dt = new DataTable();
+            da.Fill(dt);
+            dataGridView.DataSource = dt;
+        }
+
+        public void insertPembelian(String id_barang, String id_supplier,String banyak_barang)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("Insert into pos.pembelian(id_barang,id_supplier,banyak_barang,tanggal_beli) values(@id_barang,@id_supplier,@banyak_barang,@time);", conn);
+            command.Parameters.AddWithValue("@id_barang", id_barang);
+            command.Parameters.AddWithValue("@id_supplier", id_supplier);
+            command.Parameters.AddWithValue("@banyak_barang", banyak_barang);
+            command.Parameters.AddWithValue("@time", time);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
+
+        public void updateStock(String table,String id_barang, int stock)
+        {
+            DateTime time = DateTime.Now;
+            command = new MySqlCommand("update " + table + " set JumlahAwal = @stock where id = " + id_barang, conn);
+            command.Parameters.AddWithValue("@stock", stock);
+            try
+            {
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Berhasil Beli Barang Dari Supplier");
+            }
+            catch (Exception popup)
+            {
+                MessageBox.Show(popup.Message);
+            }
+        }
     }
 }
